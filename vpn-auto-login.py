@@ -107,8 +107,8 @@ def main():
     # Load .env from script directory
     load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
 
-    headless = "--headless" in sys.argv
-    debug = "--debug" in sys.argv or not headless
+    headless = "--no-headless" not in sys.argv
+    debug = "--debug" in sys.argv
 
     # Get credentials
     username = os.environ.get("VPN_USERNAME") or input("VPN Username: ")

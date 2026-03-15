@@ -110,11 +110,11 @@ npx @gongrzhe/server-gmail-autoauth-mcp auth
 ### 자동 로그인 (권장)
 
 ```bash
-# 기본 (브라우저 창 표시)
+# 기본 (헤드리스 모드)
 python3 vpn-auto-login.py
 
-# 헤드리스 모드 (브라우저 창 없이)
-python3 vpn-auto-login.py --headless
+# 브라우저 창 표시 (디버깅용)
+python3 vpn-auto-login.py --no-headless
 ```
 
 스크립트가 자동으로:
