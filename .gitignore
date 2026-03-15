@@ -1,2 +1,8 @@
 .DS_Store
 *.log
+.env
+*.png
+__pycache__/
+gcp-oauth.keys.json
+client_secret_*.json
+credentials.json
